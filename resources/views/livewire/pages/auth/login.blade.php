@@ -67,5 +67,14 @@ new #[Layout('layouts.guest')] class extends Component
                 {{ __('Log in') }}
             </x-primary-button>
         </div>
+        <div class="mt-4 w-full">
+            <div class="w-full flex justify-center items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
+                <div class="w-1/3 bg-gray-500/40 dark:bg-gray-300/40 h-[1px]"></div>
+                <span>or</span>
+                <div class="w-1/3 bg-gray-500/40 dark:bg-gray-300/40 h-[1px]"></div>
+            </div>
+            <x-github-login-button/>
+            <x-google-login-button/>
+        </div>
     </form>
 </div>
